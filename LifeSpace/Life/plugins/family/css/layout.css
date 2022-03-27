@@ -1,0 +1,15 @@
+.container {
+margin-left:auto;
+margin-right:auto;
+width:940px;
+position:relative;
+}
+.col1,.col2 {
+float:left;
+}
+.col1 {
+width:242px;
+}
+.col2 {
+width:219px;
+}
