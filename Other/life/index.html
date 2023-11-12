@@ -1,0 +1,30 @@
+<!doctype html><html><head><meta charset=UTF-8><title>My life - By DH Wong</title><link rel=stylesheet href=https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.min.css><link rel=stylesheet href=https://cdn.staticfile.org/prism/1.15.0/themes/prism.min.css><link rel=stylesheet href=https://cdn.staticfile.org/KaTeX/0.10.0-rc.1/katex.min.css><link href=./css/chunk-vendors.4e4765ff.css rel=stylesheet></head><body><div><article id=webslides><section slide class="slide bg-black-blue aligncenter" image="https://cg3.cgsociety.org/uploads/images/large/ritofr-monsters-university--1-1c4a0ba2-yfz1.jpg ."><span class="background background-" style="background-image:url('https://cg3.cgsociety.org/uploads/images/large/ritofr-monsters-university--1-1c4a0ba2-yfz1.jpg')"></span><div class=wrap wrap=true><h1 class="text-landing text-shadow">旅行日记</h1><p><a href=https://wangdihong.gitee.io/travel-blog-t class="button ghost" target=_blank>Travel diary</a></p></div></section><section slide class="slide bg-black-blue aligncenter" image="https://cg4.cgsociety.org/uploads/images/original/shnubby-office-fighter-1-86fab9a3-n5yz.jpeg ."><span class="background background-" style="background-image:url('https://cg4.cgsociety.org/uploads/images/original/shnubby-office-fighter-1-86fab9a3-n5yz.jpeg')"></span><div class=wrap wrap=true><h1 class="text-landing text-shadow">吉他手养成计划</h1><p><a href=https://wangdihong.gitee.io/video class="button ghost" target=_blank>Guitar video</a></p></div></section><section slide class="slide bg-black-blue aligncenter" image="https://cg2.cgsociety.org/uploads/images/large/freehuman-concept-art-1-8ab76e73-u46x.jpg ."><span class="background background-" style="background-image:url('https://cg2.cgsociety.org/uploads/images/large/freehuman-concept-art-1-8ab76e73-u46x.jpg')"></span><div class=wrap wrap=true></div></section><section slide class="slide bg-black-blue aligncenter" image="https://cg2.cgsociety.org/uploads/images/large/freehuman-concept-art-1-8ab76e73-u46x.jpg .dark"><span class="background dark" style="background-image:url('https://cg2.cgsociety.org/uploads/images/large/freehuman-concept-art-1-8ab76e73-u46x.jpg')"></span><div class=wrap wrap=true><h1 class="text-landing text-shadow">.</h1><p><a href=javascript:void(0) class="button ghost">.</a></p></div></section></article></div><script src=https://cdn.staticfile.org/echarts/4.8.0/echarts.min.js></script><script>window.pluginsOptions = {}
+
+
+
+    window.webslidesOptions = {}
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    let isPrintMode = false;
+    if(~location.search.indexOf('print-pdf')){
+        isPrintMode = true;
+        WebSlides.registerPlugin('scroll', function(){});
+    }
+    const wsOptions = {
+        loop: false
+    };
+    if(window.webslidesOptions){
+        for (let i in webslidesOptions){
+            if(webslidesOptions.hasOwnProperty(i)){
+                wsOptions[i] = webslidesOptions[i];
+            }
+        }
+    }
+    const ws = new WebSlides(wsOptions)
+
+    window.wsInstance = ws;
+    if(isPrintMode){
+        ws.slides.forEach(s=>s.show())
+    }
+}, false)</script><script src=./js/chunk-vendors.js></script><script src=./js/life.js></script></body></html>
